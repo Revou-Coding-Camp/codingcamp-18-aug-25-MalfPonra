@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO LIST BY PO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <div class="bg-gradient-to-r from-indigo-600 via-purple-500 to-pink-500 rounded-2xl p-8 text-center text-white mb-8 shadow-lg">
+            <h1 class="text-3xl font-bold mb-2"><i class="fas fa-check-circle"></i> TO DO LIST BY PO</h1>
+            <p class="text-blue-100">ada Tugas kirim sini biar gak forget</p>
+        </div>
+        
+        <div class="bg-white rounded-2xl p-6 shadow-xl">
+            <form id="todo-form" class="space-y-4">
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="relative">
+                        <input type="text" 
+                               id="task-input" 
+                               class="w-full pl-10 pr-4 py-3 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all"
+                               placeholder="Masukkan tugas..." 
+                               required>
+                        <i class="fas fa-tasks absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                    </div>
+                    <div class="relative">
+                        <input type="date" 
+                               id="date-input"
+                               class="w-full pl-10 pr-4 py-3 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all"
+                               required>
+                        <i class="fas fa-calendar absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                    </div>
+                </div>
+                <button type="submit" 
+                        class="w-full bg-gradient-to-r from-indigo-600 via-purple-500 to-pink-500 text-white py-3 rounded-lg hover:opacity-90 transform hover:-translate-y-0.5 transition-all duration-200">
+                    <i class="fas fa-plus mr-2"></i> Menambahkan Tugas
+                </button>
+            </form>
+
+            <div class="mt-8 grid md:grid-cols-2 gap-4 bg-gray-50 p-4 rounded-lg">
+                <div class="relative">
+                    <select id="filter-status"
+                            class="w-full pl-10 pr-4 py-3 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all">
+                        <option value="all">Semua Tugas</option>
+                        <option value="active">Belum Selesai</option>
+                        <option value="completed">Selesai</option>
+                    </select>
+                    <i class="fas fa-filter absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                </div>
+                <div class="relative">
+                    <input type="date" 
+                           id="filter-date"
+                           class="w-full pl-10 pr-4 py-3 rounded-lg border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all">
+                    <i class="fas fa-calendar-alt absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                </div>
+            </div>
+
+            <div class="my-8 bg-gray-200 rounded-full h-2 overflow-hidden">
+                <div id="progress-indicator" class="h-full bg-gradient-to-r from-indigo-600 via-purple-500 to-pink-500 transition-all duration-300"></div>
+            </div>
+
+            <ul id="task-list" class="task-list space-y-4">
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+        </div>
+    </div>
+</body>
+</html>
