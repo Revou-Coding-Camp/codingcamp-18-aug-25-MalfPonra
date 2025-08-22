@@ -2,13 +2,11 @@ TO DO LIST
 REVOU.CAMP
 
 Aplikasi To Do List
-- ✅ Menambahkan tugas baru
-- 📅 Menetapkan tanggal untuk setiap tugas
-- 🔍 Filter tugas berdasarkan status (Semua/Belum Selesai/Selesai)
-- 📊 Filter berdasarkan tanggal
-- 📈 Progress bar untuk melacak penyelesaian tugas
-- 🎨 Interface yang responsif dan menarik
-
+- Menambahkan tugas baru
+- Menetapkan tanggal untuk setiap tugas
+- Filter tugas berdasarkan status (Semua/Belum Selesai/Selesai)
+- Filter berdasarkan tanggal
+- 
 Language/Bahasa
 - HTML5
 - CSS3 (Tailwind CSS)
